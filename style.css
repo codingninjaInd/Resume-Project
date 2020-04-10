@@ -1,0 +1,885 @@
+
+body{
+    margin: 0px;
+
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+#body-header{
+
+    margin-top: 0px;
+  height: 65vh;
+
+    background-image: url("macbook_mouse.jpg");
+
+    background-size:cover;
+    background-position: center;
+    opacity: 0.8;
+    background-attachment: fixed;
+
+  
+   
+}
+
+
+
+
+/* Horizontal Lists */
+
+.bars{
+    color: white;
+    margin: 0;
+    margin-right: 5%;
+    display: none;
+    float: right;
+}
+
+.bars i {
+    font-size: 2rem;
+}
+
+.dropdown-list{
+    margin: 0;
+    display: none;
+    background-color: #828470;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+
+.dropdown-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+
+.dropdown-list li{
+    margin: 0.4rem 0px;
+}
+
+
+
+.horizontal-list{
+
+    list-style: none;
+
+
+}
+
+.horizontal-list li{
+
+    display: inline-block;
+
+    margin: 0 5px;
+}
+
+.horizontal-list li a{
+
+    text-decoration: none;
+    color: white;
+}
+
+.horizontal-list li a:hover{
+
+    color: red;
+}
+
+.text-center{
+
+    text-align: center;
+}
+
+
+
+
+.horizontal-list .sosial-icons i{
+
+    font-size: 25px;
+
+    
+}
+
+
+
+@media screen and (max-width: 600px)
+{
+    #body-header{
+  height: 65vh;
+}
+
+ 
+
+}
+
+/*
+this secton is for navigation part*/
+
+
+
+
+
+
+
+
+@media screen and(max-width: 700px)
+{
+    nav{
+
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    .horizontal-list li{
+
+        display: block;
+
+    }
+}
+
+#name-social-container
+{
+    margin-top: 20vh;
+}
+
+#my-name{
+
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.sosial-icons li a i
+{
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+.sosial-icons li a i:hover
+{
+    box-shadow: 0px 0px 6px 4px red;
+}
+
+/*my-image*/
+
+#about
+{
+    height: auto;
+    width: 100%;
+    position: relative;
+
+
+}
+
+#my-image{
+
+    height: 12rem
+    width:12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img
+{
+    height: 75%;
+    width: 75%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 4px white;
+
+}
+
+#about p
+{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    margin-top: 40px;
+   font-size: larger;
+    font-weight: 200;
+    margin-bottom: 60px;
+}
+
+
+
+@media only screen and (max-width: 572px) {
+    
+    .timeline-box {
+        width: 100%;
+        left: 10% !important;
+    }
+
+    .bars {
+        display: block;
+    }
+    
+    
+    .nav-menu {
+        display: none;
+    } 
+}
+
+/*converting resume into flex*/
+section{
+
+    width: 100%;
+
+   
+   
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-child(2n)
+{
+    background-color: #9e9e9e21;
+}
+
+section:nth-child(2n+1)
+{
+    background-color: white;
+}
+
+.section-heading{
+
+    width: auto;
+    padding: 20px 10px 10px;
+    margin: 10px auto;
+    font-weight: 400;
+}
+
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+.
+
+/*skills-section*/
+
+
+#skills{
+    width: 100%;
+    height: auto;
+
+    border: 2px solid black;
+}
+
+.skills-display
+{
+  width: 70%;
+
+
+    display: flex;
+    flex-wrap: wrap;
+
+    
+justify-content: space-between;
+
+
+  
+   
+ 
+  
+
+
+}
+
+.skill-progress
+{
+    width: 7rem;
+    height: 1.4rem;
+    background-color: lightgrey;
+    border-radius: 0.8rem;
+    border:2px solid black;
+   display: inline-block;
+   margin: 60px;
+
+
+
+   
+}
+
+.skill-progress>div{        /* it will work on direct div child of skill progress class*/
+
+border-radius: 20px 0px 0px 20px;
+
+}
+
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 5px;
+
+
+}
+
+
+
+/*skill inside color*/
+
+.mb-blue
+{
+    background-color: #2857a4;
+}
+
+.mb-orange{
+    background-color: #ff5f33;
+}
+
+.mb-thistle
+{
+    background-color:   #BA55D3;
+}
+
+.mb-green{
+     background-color: green;
+}
+
+.mb-v{
+    background-color: #c0a7d1;
+}
+
+.mb-c
+{
+    background-color: #e3bcd3;
+}
+
+.mb-m
+{
+    background-color: #58b0ac;
+}
+
+/*percernt class
+*/
+
+.eighty-five-percent 
+{
+    width: 85%;
+    height: inherit;
+}
+
+.sixty-percent
+{
+    width: 60%;
+    height: inherit;
+}
+
+.fifty-percent{
+    width:50%;
+    height: inherit;
+}
+
+.seventy-percent
+{
+    width: 70%;
+    height: inherit;
+}
+
+.seventy-five-percent 
+{
+    width: 75%;
+    height: inherit;
+}
+
+
+
+/*for-timeline experience*/
+
+
+.timeline{
+
+    position: relative;
+
+    width: 75%;
+
+  /*  border: 2px solid black;*/
+}
+
+
+.timeline-box{
+    position: relative;
+
+    width: 40%;
+
+    margin: 5px;
+
+    left: 5%;
+
+    min-height: 150px;
+
+  /*  border: 2px solid black;*/
+
+
+   
+}
+
+.timeline-box:nth-child(2n)
+{
+    left: 53%;
+}
+
+/* for content section*/
+
+.designation{
+    display: inline-block;
+   /* margin-top: 20px;*/
+   margin-top: 0px;
+    margin-left: 210px;
+}
+
+.designation::first-line{
+
+   font-size: x-large;
+    color: blue;
+    font-weight: bold;
+}
+
+.compny-name{
+
+    margin-left: 250px;
+}
+
+.compny-name::first-line{
+
+color: #ff9f28e8;
+font-size:large;
+font-weight: bold;
+}
+
+.month{
+
+     margin-left: 215px;
+}
+
+.month::first-line{
+    font-size: medium;
+}
+
+
+.timeline-box img{
+
+    width: 50px;
+    height: 50px;
+
+}
+
+
+/*this is the code for time line divider*/
+
+.timeline-divider{
+
+    position: absolute;
+    height: 75%;
+
+    width: 0;
+
+    border: 3px dashed #0096fa6b;
+    top: 10%;
+    left: 50%;
+}
+
+
+/*media*/
+
+@media screen and (max-width: 600px)
+{
+    .timeline-divider{
+        left: 5%;
+    }
+
+    .timeline-box{
+
+        left: 12%;
+
+        width: 80%;
+
+}
+
+.timeline-box:nth-child(2n)
+{
+    left: 12%;
+}
+
+.timeline-box:nth-child(2n+1)::after
+{
+    left: -12%;
+
+}
+
+}
+
+.timeline-traveller{
+
+    position:sticky;
+
+    top: 25%;
+
+   /* for concerting the direction of plane*/
+
+   transform: rotate(90deg);
+}
+
+
+/*for making dotes after time line box*/
+
+.timeline-box:nth-child(2n+1)::after{
+
+    content: '';
+
+    position: absolute;   /*use sabsulute if your photo is not visible*/
+    top: 38%;
+    right: -13%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+
+    z-index: 1;
+
+
+}
+
+
+.timeline-box:nth-child(2n)::after{
+
+    content: '';
+
+    position: absolute;   /*use sabsulute if your photo is not visible*/
+    top: 38%;
+    left: -9%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+
+    z-index: 1;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*for education*/
+
+
+
+.month-school{
+
+     margin-left: 300px;
+}
+
+.month-school::first-line{
+    font-size: medium;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*for portfoliyo*/
+
+
+#portfolio
+{
+
+    
+  /* border: 2px solid black;*/
+  /* background-color: pink;*/
+
+    width: 100%;
+
+   
+   
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.element-container
+{
+    width: 70%;
+
+    height: auto;
+
+   flex-wrap: wrap;
+
+    
+justify-content: space-between;
+
+margin: auto;
+
+
+
+
+}
+
+
+
+.img-container{
+
+
+    width: 250px;
+    height: 250px;
+   /*
+    border:2px solid black;*/
+   display: inline-block;
+margin: 20px;
+
+overflow: hidden;
+
+position: relative;
+
+
+ 
+
+
+}
+
+
+.detail-container{
+
+    top: 0;
+    left: 0;
+
+    color: transparent;
+    position: absolute;
+
+    text-align:center;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.img-container:hover
+{
+    box-shadow:  0 0 20px #74ADC8;
+}
+
+
+
+.img-container:hover .detail-container
+{
+     background-color: #80808078;
+    /* display: block; */
+    color: white;
+}
+
+
+
+.img-container img
+{
+    width: 250px;
+    height: 250px;
+
+   
+
+    
+}
+
+
+
+
+
+
+
+
+/*contect form*/
+
+
+#contact {
+
+
+
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    /*background-image: linear-gradient(50deg,#2857a4 0%, #5378b1 74%);*/
+    /*background-image: linear-gradient(170deg,#2857a4 0%, #8496b2 74%);*/
+    /*background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);*/
+    /*background-image: linear-gradient(to right,#13226fe0, #5473a2e0, #434ba8e0);*/
+    /*background-color: #13386fe0;*/
+    color: white;
+    padding-bottom: 40px;
+}
+
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+#contact-form {
+    margin-left: 20%;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    /*#2857a4*/
+    color: var(--contact-light-text-color);
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    /*#1a1a1a;*/
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#contact .social-icons li a i {
+
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/*credit-section*/
+
+#credit{
+
+    width: 100%;
+    height: auto;
+    /*background-color: #da6715;*/
+
+
+    background: repeating-linear-gradient(to top right ,red,orange);
+}
+
+#credit i
+{
+    color: red;
+
+}
+
+
+
+
+
+
+
+
+
